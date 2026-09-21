@@ -10,7 +10,7 @@
 CREATE OR REPLACE TABLE customers_raw AS
 SELECT *
 FROM read_csv(
-    '/Users/prajeethavijayan/Desktop/Prajeetha/projects - prac/coffee sales/walkin_case_study_analytics_consultant/learning semantic layer/customer_level_data_cleaned.csv',
+    'customer_level_data_cleaned.csv',
     header = true,
     all_varchar = true
 );
@@ -18,7 +18,7 @@ FROM read_csv(
 CREATE OR REPLACE TABLE transactions_raw AS
 SELECT *
 FROM read_csv(
-    '/Users/prajeethavijayan/Desktop/Prajeetha/projects - prac/coffee sales/walkin_case_study_analytics_consultant/learning semantic layer/transaction_level_data_cleaned.csv',
+    'transaction_level_data_cleaned.csv',
     header = true,
     all_varchar = true
 );
@@ -26,7 +26,7 @@ FROM read_csv(
 CREATE OR REPLACE TABLE items_raw AS
 SELECT *
 FROM read_csv(
-    '/Users/prajeethavijayan/Desktop/Prajeetha/projects - prac/coffee sales/walkin_case_study_analytics_consultant/learning semantic layer/item_level_data_cleaned.csv',
+    'item_level_data_cleaned.csv',
     header = true,
     all_varchar = true
 );
